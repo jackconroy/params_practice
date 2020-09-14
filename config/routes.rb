@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     get "/phrases?key=value" => "phrases#phrase_query"
     
     get "/phrases/:phrase" => "phrases#phrase_caps"
+
+    post "/phrases/body_path" => "phrases#phrase_caps"
   end
 
 
